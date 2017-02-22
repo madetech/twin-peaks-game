@@ -26,7 +26,7 @@ const gui = {
   },
 
   async gameOver() {
-    console.log('Done')
+    document.body.innerHTML += '<h1>GAME OVER</h1>'
   }
 }
 
