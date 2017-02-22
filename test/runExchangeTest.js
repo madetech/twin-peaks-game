@@ -42,6 +42,7 @@ test(async t => {
   t.true(gui.buffer.includes('Test exchange #1'))
   t.true(gui.buffer.includes('Answer'))
 
+  t.is(answer.gui, gui)
   t.is(answer.character, character)
   t.is(answer.exchange, endExchange)
 })
