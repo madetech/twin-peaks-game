@@ -21,7 +21,7 @@ module.exports = function ({ character }) {
     <h1>Twin Peaks</h1>
     <aside><img src="/images/trees.gif" /></aside>
     <p>Finally, you think to yourself.
-    <p>The rain that slowed your journey is still pouring heavily but at least you will soon see your partner.
+    <p>The rain that slowed your journey is still pouring heavily but at least you will soon see your partner, ${character.associates.partner.name}.
     <p>You realise you have never been to Twin Peaks before, and wonder where you can find the hotel your ${halfAttribute} half is staying at.
     <p>${nextSteps}
   `

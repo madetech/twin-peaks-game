@@ -11,7 +11,7 @@ module.exports = function hotelBar ({ character }) {
 
   if (character.attributes.lowSelfEsteem < 4) {
     question += `
-      <p>A person sits next to you, introducing themselves as ${character.associates.barPerson.name}. You find them attractive, and wonder if your partner knows them, or grew up with them. You feel a little guilty but engage in conversation.
+      <p>A person sits next to you, introducing themselves as ${character.associates.barPerson.name}. You find them attractive, and wonder if  ${character.associates.partner.name} knows them, or grew up with them. You feel a little guilty but engage in conversation.
     `
   }
 
