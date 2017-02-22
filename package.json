@@ -23,7 +23,7 @@
     "test": "ava test/*Test.js",
     "build": "browserify index.js -o static/index.js -t babelify",
     "watch": "watchify index.js -o static/index.js -t babelify",
-    "start": "yarn build && cd static/ && python -m SimpleHTTPServer 8000"
+    "start": "concurrently --raw \"yarn watch\" \"cd static/ && python -m SimpleHTTPServer 8000\""
   },
   "ava": {
     "require": "async-to-gen/register"
