@@ -40,6 +40,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "babelify": "^7.3.0",
     "browserify": "^14.1.0",
+    "concurrently": "^3.3.0",
     "watchify": "^3.9.0"
   }
 }

@@ -1,5 +1,6 @@
-const theEnd = require('./theEnd')
 const extend = require('extend')
+const theEnd = require('./theEnd')
+const woods = require('./woods')
 
 module.exports = function ({ character }) {
   return {
@@ -16,6 +17,12 @@ module.exports = function ({ character }) {
         predicate: () => true,
         effect: character => character,
         leadsTo: theEnd
+      },
+      {
+        text: 'DEV WOODS',
+        predicate: () => true,
+        effect: character => character,
+        leadsTo: woods
       }
     ]
   }
