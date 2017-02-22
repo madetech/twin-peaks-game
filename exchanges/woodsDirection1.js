@@ -25,7 +25,7 @@ module.exports = function woodsDirection1 ({ character }) {
       {
         text: 'Go straight ahead',
         predicate: () => true,
-        effect: incrementAttributeEffect('fear'),
+        effect: character => character,
         leadsTo: woodsDirectionBonus
       },
       {
