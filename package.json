@@ -20,5 +20,8 @@
   "scripts": {
     "lint": "standard",
     "test": "ava"
+  },
+  "ava": {
+    "require": "async-to-gen/register"
   }
 }
