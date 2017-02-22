@@ -6,10 +6,23 @@ const randomiseCharacter = require('./lib/randomiseCharacter')
 const createStartExchange = require('./exchanges/start')
 
 const gui = {
-  async prompt ({ character, question, answers }) {
-    console.log(question)
-    answers.forEach(answer => console.log(answer.text))
-    return answers[0]
+  prompt ({ character, question, answers }) {
+    return new Promise(function (resolve, reject) {
+      let html = `<article><h2>${question}</h2><ul>`
+
+      answers.forEach((answer) =>
+        html += `<li><button>${answer.text}</button></li>`
+      )
+
+      html += '</ul></article>'
+
+      document.body.innerHTML = html
+
+      const buttons = document.querySelectorAll('button')
+      buttons.forEach((el, i) => {
+        el.onclick = () => resolve(answers[i])
+      })
+    })
   },
 
   async gameOver() {
