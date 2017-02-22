@@ -31,7 +31,7 @@ const gui = {
   },
 
   async gameOver() {
-    document.body.innerHTML += '<h1>GAME OVER</h1>'
+    document.body.innerHTML = '<h1>GAME OVER</h1>' + document.body.innerHTML
     document.body.innerHTML += '<button onclick="window.location = window.location">Start over</button>'
 
   }
