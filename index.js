@@ -8,7 +8,7 @@ const createStartExchange = require('./exchanges/start')
 const gui = {
   prompt ({ character, question, answers }) {
     return new Promise(function (resolve, reject) {
-      let html = `<article><h2>${question}</h2><ul>`
+      let html = `<article><div>${question}</div><ul>`
 
       answers.forEach((answer) =>
         html += `<li><button>${answer.text}</button></li>`
