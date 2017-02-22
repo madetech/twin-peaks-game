@@ -1,3 +1,4 @@
+const incrementAttributeEffect = require('../lib/incrementAttributeEffect')
 const hotelLobby = require('./hotelLobby')
 
 module.exports = function ({ character }) {
@@ -8,12 +9,14 @@ module.exports = function ({ character }) {
   }
 
   let devilTalk = 'For a moment you think the attendant answers in a language you cannot recognise. After looking slightly confused the attendant repeats with convincing enough instructions to get you to the hotel.'
+  let effect = character => character
 
   if (character.attributes.fear > 5) {
     devilTalk = `
       You're struck with a sudden sense of fear. Did the attendant just speak to you in devil tongue? Paranoid, you run out of the diner and up the road.
       <p>You don't stop until you notice a building that looks quite like a hotel.
     `
+    effect = incrementAttributeEffect('fear')
   }
 
   return {
@@ -27,7 +30,7 @@ module.exports = function ({ character }) {
       {
         text: 'Head to the hotel',
         predicate: () => true,
-        effect: character => character,
+        effect,
         leadsTo: hotelLobby
       },
     ]
