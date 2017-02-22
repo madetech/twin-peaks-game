@@ -1,4 +1,5 @@
-import theEnd from './theEnd'
+const theEnd = require('./theEnd')
+const extend = require('extend')
 
 module.exports = function ({ character }) {
   return {
@@ -7,11 +8,13 @@ module.exports = function ({ character }) {
       {
         text: 'Hey there',
         predicate: () => true,
+        effect: character => extend(character, { decisions: { saidHello: true } }),
         leadsTo: theEnd
       },
       {
         text: '[Say nothing]',
         predicate: () => true,
+        effect: character => character,
         leadsTo: theEnd
       }
     ]
