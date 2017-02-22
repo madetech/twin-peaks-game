@@ -32,9 +32,11 @@ Weird and moody exploration of a town. Branching narratives guide you around a m
 ## Scene
 
 ``` js
-welcomeExchange = {
-  question: 'How do you want to play?',
-  answers: [strongAnswer]
+function welcomeExchange () {
+  return {
+    question: 'How do you want to play?',
+    answers: [strongAnswer]
+  }
 }
 
 strongAnswer = {
