@@ -11,8 +11,8 @@ module.exports = function ({ character }) {
 
   if (character.attributes.fear > 5) {
     devilTalk = `
-      Your struck with a sudden sense of fear. Did the attendant just speak to you in devil tongue? Paranoid, you run out of the diner and run.
-      <p>You run along the road until you notice a building that looks quite like a hotel.
+      You're struck with a sudden sense of fear. Did the attendant just speak to you in devil tongue? Paranoid, you run out of the diner and up the road.
+      <p>You don't stop until you notice a building that looks quite like a hotel.
     `
   }
 
