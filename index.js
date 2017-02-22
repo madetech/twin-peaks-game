@@ -18,6 +18,11 @@ const gui = {
 
       document.body.innerHTML = html
 
+      if (answers.length === 0) {
+        resolve()
+        return
+      }
+
       const buttons = document.querySelectorAll('button')
       buttons.forEach((el, i) => {
         el.onclick = () => resolve(answers[i])
@@ -27,6 +32,8 @@ const gui = {
 
   async gameOver() {
     document.body.innerHTML += '<h1>GAME OVER</h1>'
+    document.body.innerHTML += '<button onclick="window.location = window.location">Start over</button>'
+
   }
 }
 
