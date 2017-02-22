@@ -1,3 +1,4 @@
+const incrementAttributeEffect = require('../lib/incrementAttributeEffect')
 const woodsDirectionLost = require('./woodsDirectionLost')
 const woodsToHotel = require('./woodsToHotel')
 
@@ -8,19 +9,19 @@ module.exports = function woodsDirectionEnd ({ character }) {
       {
         text: 'Go left',
         predicate: () => true,
-        effect: character => character,
+        effect: incrementAttributeEffect('fear'),
         leadsTo: woodsDirectionLost
       },
       {
         text: 'Go right',
         predicate: () => true,
-        effect: character => character,
+        effect: incrementAttributeEffect('fear'),
         leadsTo: woodsDirectionLost
       },
       {
         text: 'Go straight ahead',
         predicate: () => true,
-        effect: character => character,
+        effect: incrementAttributeEffect('fear'),
         leadsTo: woodsDirectionLost
       },
       {
