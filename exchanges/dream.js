@@ -4,7 +4,7 @@ const theEnd = require('./theEnd')
 module.exports = function ({ character }) {
   let question = `
     <style>body { background: #930b04 }</style>
-    <p><img src="/red.gif" width=500 />
+    <p><img src="/images/red.gif" width=500 />
     <p>pat a ekil snur ekal ehT
   `
 
