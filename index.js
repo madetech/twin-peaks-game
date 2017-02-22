@@ -7,6 +7,11 @@ const createStartExchange = require('./exchanges/start')
 
 const gui = {
   prompt ({ character, question, answers }) {
+    console.log(character.name)
+    console.log(character.attributes)
+    console.log(character.decisions)
+    console.log('')
+
     return new Promise(function (resolve, reject) {
       let html = `<article><div>${question}</div><ul>`
 
@@ -33,7 +38,6 @@ const gui = {
   async gameOver() {
     document.body.innerHTML = '<h1>GAME OVER</h1>' + document.body.innerHTML
     document.body.innerHTML += '<button onclick="window.location = window.location">Start over</button>'
-
   }
 }
 
