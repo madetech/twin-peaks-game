@@ -1,5 +1,5 @@
-import test from 'ava'
-import filterAnswers from '../lib/filterAnswers'
+const test = require('ava')
+const filterAnswers = require('../lib/filterAnswers')
 
 test(t => {
   const potentialAnswers = [
