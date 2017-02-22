@@ -33,12 +33,6 @@ module.exports = function ({ character }) {
         predicate: () => true,
         effect: character => character,
         leadsTo: diner
-      },
-      {
-        text: 'Oddly, head to the woods',
-        predicate: () => true,
-        effect: character => character,
-        leadsTo: woods
       }
     ]
   }

@@ -1,3 +1,5 @@
+const theEnd = require('./theEnd')
+
 module.exports = function woodsDirectionLost ({ character }) {
   const possibleQuestions = [
     'Have you been here before?',
@@ -33,6 +35,12 @@ module.exports = function woodsDirectionLost ({ character }) {
         predicate: () => true,
         effect: character => character,
         leadsTo: woodsDirectionLost
+      },
+      {
+        text: 'Lie down in the leaves',
+        predicate: () => true,
+        effect: character => character,
+        leadsTo: theEnd
       }
     ]
   }

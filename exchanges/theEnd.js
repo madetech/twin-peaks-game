@@ -1,4 +1,4 @@
-module.exports = function ({ character }) {
+module.exports = function theEnd ({ character }) {
   return {
     question: `
       <p>You wake up sharply.

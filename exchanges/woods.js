@@ -4,7 +4,7 @@ const woodsToHotel = require('./woodsToHotel')
 
 module.exports = function woods ({ character }) {
   return {
-    question: 'You grow increasingly concerned as you follow the path through the woods, occassionally catching a glimpse of somebody ahead of you, but never getting close enough to see them. You reach a clearing, and see motion to your left, right and straight ahead, but you can\'t tell what it is.',
+    question: 'You grow increasingly concerned as you follow the path through the woods, occassionally catching a glimpse of the person up ahead of you, but never getting close enough to see them. You reach a clearing, and see motion to your left, right and straight ahead, but you can\'t tell what it is.',
     answers: [
       {
         text: 'Go left',
