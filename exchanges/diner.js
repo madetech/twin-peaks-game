@@ -18,6 +18,7 @@ module.exports = function ({ character }) {
 
   return {
     question: `
+      <aside><img src="/images/diner.gif" /></aside>
       <p>Walking through the diner you remember why you'd always avoided Twin Peaks in the past.
       <p>You notice a striking character out of the window before the noise of plates going into a dishwasher disturbs your thoughts.
       <p>The diner attendent looks helpful ${helpLevel} so you wander over and ask for directions to the only hotel in Twin Peaks.

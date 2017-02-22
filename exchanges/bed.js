@@ -2,6 +2,7 @@ const dream = require('./dream')
 
 module.exports = function ({ character }) {
   let question = `
+    <aside><img src="/images/bed.gif" /></aside>
     <p>You head up to your room and get into bed. As you lie in the dark, you try not to let your mind get the better of you.
   `
 

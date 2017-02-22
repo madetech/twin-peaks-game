@@ -4,6 +4,7 @@ const bed = require('./bed')
 module.exports = function carPark ({ character }) {
   return {
     question: `
+      <aside><img src="/images/car-park.gif" /></aside>
       <p>By the time you've gotten to the car park outside, person you recognised in the mirror has already crossed it. You can see them in the distance, stepping into the woods. It has to be your partner, they must have arrived before you. But what are they doing out here? You hesitate, not sure what to do.
     `,
     answers: [
